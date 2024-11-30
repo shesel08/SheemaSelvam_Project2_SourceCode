@@ -16,9 +16,11 @@ class Player:
         self.user_socket.connect((self.host, 55555))
 
         # Possible Choices
-        self.possible_answer = ["Miss. Scarlett", "Colonel. Mustard", "Mrs. White", "Reverend. Green", "Mrs. Peacock", "Professor. Plum",
+        self.possible_answer = ["Miss. Scarlett", "Colonel. Mustard", "Mrs. White", "Reverend. Green", "Mrs. Peacock",
+                                "Professor. Plum",
                                 "Knife", "Candlestick", "Revolver", "Rope", "Lead pipe", "Wrench",
-                                "Hall", "Lounge", "Dining room", "Kitchen", "Ballroom", "Conservatory", "Billiard room", "Library", "Study"]
+                                "Hall", "Lounge", "Dining room", "Kitchen", "Ballroom", "Conservatory", "Billiard room",
+                                "Library", "Study"]
 
         self.rooms = {1: "Hall", 2: "Lounge", 3: "Dining room", 4: "Kitchen", 5: "Ballroom", 6: "Conservatory",
                       7: "Billiard room", 8: "Library", 9: "Study"}
@@ -43,14 +45,6 @@ class Player:
         initialised = True
         return None
 
-    # Chooses a room from possible choices
-    def choose_room(self):
-        for key in self.rooms:
-            if self.rooms[key] in self.possible_answer:
-                self.send_message(str(key))
-                break
-        return None
-
     # Chooses suspect and weapon from possible choices.
     def choose_suspect_and_weapon(self):
         guess = ''
@@ -65,6 +59,14 @@ class Player:
         self.send_message(guess)
         return None
 
+    # Chooses a room from possible choices
+    def choose_room(self):
+        for key in self.rooms:
+            if self.rooms[key] in self.possible_answer:
+                self.send_message(str(key))
+                break
+        return None
+
     def send_message(self, bot_message):
         try:
             print(bot_message)
@@ -73,7 +75,7 @@ class Player:
             print(f"Send Error:{error}")
         return None
 
-    def bot_act_on_message(self, message):
+    def act_on_message(self, message):
         # Match incoming messages from game and react accordingly.
         global winning
         if 'Your Cards' in message and not initialised:
@@ -112,7 +114,7 @@ class Player:
                     break
                 else:
                     print(message)
-                    self.bot_act_on_message(message)
+                    self.act_on_message(message)
             except Exception as e:
                 print(f"Error occurred: {e}")
                 break

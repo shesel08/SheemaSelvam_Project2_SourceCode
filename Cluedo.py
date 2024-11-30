@@ -253,7 +253,7 @@ def player_turn(name):
                         and murder_solution['Weapon'] == WEAPONS[suspect_weapon[1]]
                         and murder_solution['Place'] == ROOMS[room_no]):
                     send_all(f"{name} WON !")
-                    player_id.send(f"\nCongrats {name} you have solved the case !".encode("utf-8"))
+                    player_id.send(f"\nCongrats {name}, you have solved the case !".encode("utf-8"))
                     return True
                 else:
                     send_all(f"Wrong accusation !\n{name} will no longer make accusations.")
