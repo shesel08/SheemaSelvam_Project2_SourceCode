@@ -40,7 +40,7 @@ This game is coded for player agents to make moves and make selections in the sa
 The Player.py adds a player with every run. Hence, if you want to play the game with 3 players, then execute Player.py 3 times in 3 different terminals.
 This gives a feel like 3 different players are playing the game, and it shows the cards and choices of that player in the terminal. 
 The name of the player is picked randomly to identify each of them uniquely. 
-Cluedo.py has the main code for the game which starts execution once all players have joined the game. 
+Cluedo.py has the main code for the game which starts execution once all players have joined the game.
 The communication between the players and the game server is maintained over messages.
 
 To execute the game, follow the below steps in order.

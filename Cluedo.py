@@ -10,7 +10,7 @@ playernames = []
 members = {}
 players_deck = {}
 player_point = {}
-murder_solution = {}
+murder_solution = []
 valid_name_pattern = r'[A-Za-z0-9-_]*'
 game_art1 = '''
 ==================================================================
@@ -110,14 +110,14 @@ def deal_cards(num_players, players_nicknames):
     temp_decs = []
     deck = []
     # Select one suspect, weapon, and room for the solution
-    murder_solution = dict(Killer=random.choice(list(SUSPECTS.values())), Weapon=random.choice(list(WEAPONS.values())),
-                           Place=random.choice(list(ROOMS.values())))
+    murder_solution = [random.choice(list(SUSPECTS.values())), random.choice(list(WEAPONS.values())),
+                       random.choice(list(ROOMS.values()))]
 
     print("Murder solution:", murder_solution)
     # Remove solution cards from deck
-    deck = [SUSPECTS[s] for s in SUSPECTS if SUSPECTS[s] not in murder_solution['Killer']]
-    deck += [WEAPONS[w] for w in WEAPONS if WEAPONS[w] not in murder_solution['Weapon']]
-    deck += [ROOMS[r] for r in ROOMS if ROOMS[r] not in murder_solution['Place']]
+    deck = [SUSPECTS[s] for s in SUSPECTS if SUSPECTS[s] not in murder_solution]
+    deck += [WEAPONS[w] for w in WEAPONS if WEAPONS[w] not in murder_solution]
+    deck += [ROOMS[r] for r in ROOMS if ROOMS[r] not in murder_solution]
 
     random.shuffle(deck)
     for i in range(0, num_players):
@@ -246,27 +246,31 @@ def player_turn(name):
                     break
             if temp_win:
                 send_all(f"No proof against {name}'s suggestion.")
+
             player_id.send("Do you want to revel cards ?(y/n)".encode("utf-8"))
             choice_r = player_id.recv(1024).decode("utf-8")
             if choice_r == 'y':
-                if (murder_solution['Killer'] == SUSPECTS[suspect_weapon[0]]
-                        and murder_solution['Weapon'] == WEAPONS[suspect_weapon[1]]
-                        and murder_solution['Place'] == ROOMS[room_no]):
-                    send_all(f"{name} WON !")
-                    player_id.send(f"\nCongrats {name}, you have solved the case !".encode("utf-8"))
-                    return True
+                if name in playernames:
+                    return make_accusation(name, SUSPECTS[suspect_weapon[0]], WEAPONS[suspect_weapon[1]], ROOMS[room_no])
                 else:
-                    send_all(f"Wrong accusation !\n{name} will no longer make accusations.")
-                    try:
-                        playernames.remove(name)
-                    except ValueError:
-                        print(f"{name} not found in the list.")
-                        return None
+                    return None
             else:
                 pass
         else:
             pass
     return False
+
+
+def make_accusation(player_name, suspect, weapon, room):
+    if [suspect, weapon, room] == murder_solution:
+        send_all(f"{player_name} WON !")
+        print(f"{player_name} wins! The murder was committed by {suspect} with the {weapon} in the {room}!")
+        return True
+    else:
+        print(f"{player_name} made a false accusation. Game continues.")
+        send_all(f"Wrong accusation !\n{player_name} will no longer make accusations.")
+        playernames.remove(player_name)
+        return False
 
 
 # Display each player their cards and points.
