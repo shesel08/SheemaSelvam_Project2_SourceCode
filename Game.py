@@ -41,22 +41,27 @@ class Game:
         for player in self.players:
             player.update_possible_answer()
 
-    def make_suggestion(self, player_name, suspect, weapon, room):
-        print(f"{player_name} suggests: {suspect} with the {weapon} in the {room}")
+    def make_suggestion(self, p, suspect, weapon, room):
+        print(f"{p.name} suggests: {suspect} with the {weapon} in the {room}")
+        pattern_1 = r'([A-Za-z0-9-_]*) has ([A-Za-z .]*).'
         temp_win = True
+        accused = [suspect, weapon, room]
         for player in self.players:
-            if player.name != player_name:
-                # Check if player can refute
+            for accuse in accused:
                 for card in player.hand:
-                    if card.name in [suspect, weapon, room]:
-                        print(f"{player_name} refutes with {card.name}")
+                    if accuse in card.name and player.name != p.name:
+                        print(f"{player.name} has disapproved {p.name}'s suggestion.")
+                        p.possible_answer.remove(accuse)
                         temp_win = False
                         break
                 if not temp_win:
                     break
+            if not temp_win:
+                break
 
         if temp_win:
-            print(f"No proof against {player_name}'s suggestion.")
+            print(f"No proof against {p.name}'s suggestion.")
+        return temp_win
 
     def make_accusation(self, player_name, suspect, weapon, room):
         if [suspect, weapon, room] == self.murder_solution:
@@ -92,10 +97,13 @@ class Game:
                     player.player_point = 0
                     room = player.choose_room()
                     suspect, weapon = player.choose_suspect_and_weapon()
-                    game.make_suggestion(player.name, suspect, weapon, room)
+                    winning = game.make_suggestion(player, suspect, weapon, room)
                     if player.name in game.playersWhoCanMakeAccusation:
                         print("Do you want to reveal cards ?(y/n)")
-                        choice_r = random.choices(['y', 'n'], weights=(50, 50))
+                        if winning:
+                            choice_r = random.choices(['y', 'n'], weights=(98, 2))
+                        else:
+                            choice_r = random.choices(['y', 'n'], weights=(2, 98))
                         print(f"You have chosen {choice_r} to reveal cards")
                         if 'y' in choice_r:
                             return game.make_accusation(player.name, suspect, weapon, room)
@@ -123,5 +131,5 @@ if __name__ == '__main__':
         print("\n\n")
 
     if len(game.playersWhoCanMakeAccusation) == 0:
-        print("All players have been eliminated from making accusations")
+        print("All players have been removed from making accusations")
     print("Thanks for playing.")

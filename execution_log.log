@@ -1,0 +1,835 @@
+C:\Users\SS\miniconda3\python.exe C:\Users\SS\Documents\GitHub\SheemaSelvam_Project2_SourceCode\Game.py 
+DEBUG: Murder solution (hidden): ['Colonel. Mustard', 'Lead pipe', 'Kitchen']
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 1
+Charlie is rolling dice..
+Charlie has rolled dice 5
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 1
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 1
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 5
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 2
+Charlie is rolling dice..
+Charlie has rolled dice 3
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Lead pipe in the Conservatory
+Bob has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 2
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 3
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 5
+Bob is rolling dice..
+Bob has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Mrs. White with the Lead pipe in the Library
+Alice has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 5
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 7
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 5
+
+
+Alice is rolling dice..
+Alice has rolled dice 3
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Professor. Plum with the Revolver in the Study
+Bob has disapproved Alice's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Bob is rolling dice..
+Bob has rolled dice 5
+Charlie is rolling dice..
+Charlie has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Wrench in the Library
+Alice has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 5
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 2
+Charlie is rolling dice..
+Charlie has rolled dice 3
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 1
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 7
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 3
+
+
+Alice is rolling dice..
+Alice has rolled dice 2
+Bob is rolling dice..
+Bob has rolled dice 3
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Professor. Plum with the Revolver in the Dining room
+Charlie has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 3
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 3
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 6
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 6
+Charlie is rolling dice..
+Charlie has rolled dice 2
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Reverend. Green with the Lead pipe in the Lounge
+Alice has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 4
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 6
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Colonel. Mustard with the Revolver in the Billiard room
+Bob has disapproved Alice's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Bob is rolling dice..
+Bob has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Colonel. Mustard with the Rope in the Lounge
+Alice has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 5
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 5
+
+
+Alice is rolling dice..
+Alice has rolled dice 5
+Bob is rolling dice..
+Bob has rolled dice 3
+Charlie is rolling dice..
+Charlie has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Lead pipe in the Lounge
+Alice has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 5
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 3
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 4
+Charlie is rolling dice..
+Charlie has rolled dice 3
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 6
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 7
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 3
+
+
+Alice is rolling dice..
+Alice has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['n'] to enter room
+Bob is rolling dice..
+Bob has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Colonel. Mustard with the Wrench in the Kitchen
+Alice has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Lead pipe in the Billiard room
+Bob has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 12
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Mrs. Peacock with the Candlestick in the Hall
+Bob has disapproved Alice's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Bob is rolling dice..
+Bob has rolled dice 3
+Charlie is rolling dice..
+Charlie has rolled dice 1
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 3
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 1
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Bob is rolling dice..
+Bob has rolled dice 1
+Charlie is rolling dice..
+Charlie has rolled dice 5
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 4
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 4
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 6
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 2
+Charlie is rolling dice..
+Charlie has rolled dice 2
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Knife in the Library
+Alice has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 5
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 6
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 3
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Mrs. Peacock with the Revolver in the Kitchen
+Charlie has disapproved Alice's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Bob is rolling dice..
+Bob has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Colonel. Mustard with the Rope in the Kitchen
+Charlie has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 6
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 6
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Bob is rolling dice..
+Bob has rolled dice 6
+Charlie is rolling dice..
+Charlie has rolled dice 1
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 4
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 6
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 7
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Colonel. Mustard with the Rope in the Kitchen
+Charlie has disapproved Alice's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Bob is rolling dice..
+Bob has rolled dice 1
+Charlie is rolling dice..
+Charlie has rolled dice 2
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Candlestick in the Kitchen
+Bob has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 7
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Bob is rolling dice..
+Bob has rolled dice 2
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Mrs. Peacock with the Knife in the Kitchen
+Alice has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 2
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 4
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 2
+
+
+Alice is rolling dice..
+Alice has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Professor. Plum with the Lead pipe in the Kitchen
+Charlie has disapproved Alice's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['y'] to reveal cards
+Alice made a false accusation. Game continues.
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 2
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Bob is rolling dice..
+Bob has rolled dice 2
+Charlie is rolling dice..
+Charlie has rolled dice 2
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 4
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 2
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 4
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Miss. Scarlett with the Revolver in the Conservatory
+Bob has disapproved Alice's suggestion.
+Bob is rolling dice..
+Bob has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Mrs. Peacock with the Lead pipe in the Kitchen
+Charlie has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Miss. Scarlett with the Lead pipe in the Ballroom
+Alice has disapproved Charlie's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['y'] to reveal cards
+Charlie made a false accusation. Game continues.
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 3
+Bob is rolling dice..
+Bob has rolled dice 5
+Charlie is rolling dice..
+Charlie has rolled dice 6
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 3
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 5
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 6
+
+
+Alice is rolling dice..
+Alice has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Mrs. White with the Revolver in the Kitchen
+Charlie has disapproved Alice's suggestion.
+Bob is rolling dice..
+Bob has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Reverend. Green with the Revolver in the Kitchen
+Alice has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 5
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Miss. Scarlett with the Lead pipe in the Study
+Bob has disapproved Charlie's suggestion.
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 5
+Charlie is rolling dice..
+Charlie has rolled dice 6
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 1
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 5
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 6
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Bob is rolling dice..
+Bob has rolled dice 3
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Colonel. Mustard with the Revolver in the Ballroom
+Alice has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 4
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Lead pipe in the Hall
+Bob has disapproved Charlie's suggestion.
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 5
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 4
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Colonel. Mustard with the Revolver in the Conservatory
+Bob has disapproved Alice's suggestion.
+Bob is rolling dice..
+Bob has rolled dice 5
+Charlie is rolling dice..
+Charlie has rolled dice 1
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 5
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 1
+
+
+Alice is rolling dice..
+Alice has rolled dice 2
+Bob is rolling dice..
+Bob has rolled dice 1
+Charlie is rolling dice..
+Charlie has rolled dice 5
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 2
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 6
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 6
+
+
+Alice is rolling dice..
+Alice has rolled dice 2
+Bob is rolling dice..
+Bob has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Colonel. Mustard with the Revolver in the Dining room
+Charlie has disapproved Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['n'] to reveal cards
+Charlie is rolling dice..
+Charlie has rolled dice 1
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 4
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 0
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 7
+
+
+Alice is rolling dice..
+Alice has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['n'] to enter room
+Bob is rolling dice..
+Bob has rolled dice 4
+Charlie is rolling dice..
+Charlie has rolled dice 2
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Charlie suggests: Colonel. Mustard with the Lead pipe in the Study
+Bob has disapproved Charlie's suggestion.
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 10
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 4
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 0
+
+
+Alice is rolling dice..
+Alice has rolled dice 2
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Alice suggests: Colonel. Mustard with the Lead pipe in the Dining room
+Charlie has disapproved Alice's suggestion.
+Bob is rolling dice..
+Bob has rolled dice 2
+Charlie is rolling dice..
+Charlie has rolled dice 6
+
+
+
+Player Alice Cards: ['Ballroom', 'Reverend. Green', 'Knife', 'Library', 'Lounge', 'Wrench']
+Your points: 0
+
+
+Player Bob Cards: ['Billiard room', 'Conservatory', 'Miss. Scarlett', 'Hall', 'Candlestick', 'Study']
+Your points: 6
+
+
+Player Charlie Cards: ['Dining room', 'Revolver', 'Rope', 'Professor. Plum', 'Mrs. White', 'Mrs. Peacock']
+Your points: 6
+
+
+Alice is rolling dice..
+Alice has rolled dice 1
+Bob is rolling dice..
+Bob has rolled dice 6
+Want to enter in a room ? (y/n)
+You have chosen ['y'] to enter room
+Bob suggests: Colonel. Mustard with the Lead pipe in the Kitchen
+No proof against Bob's suggestion.
+Do you want to reveal cards ?(y/n)
+You have chosen ['y'] to reveal cards
+Bob wins! The murder was committed by Colonel. Mustard with the Lead pipe in the Kitchen!
+
+
+
+Thanks for playing.
+
+Process finished with exit code 0
