@@ -36,17 +36,9 @@ There are nine rooms in the mansion where the murder could have taken place.
 
 The project can be cloned from GitHub using the url - https://github.com/shesel08/SheemaSelvam_Project2_SourceCode.git
 
-This game is coded for player agents to make moves and make selections in the same computer with an IP specified to act as a game server.
-The Player.py adds a player with every run. Hence, if you want to play the game with 3 players, then execute Player.py 3 times in 3 different terminals.
-This gives a feel like 3 different players are playing the game, and it shows the cards and choices of that player in the terminal. 
-The name of the player is picked randomly to identify each of them uniquely. 
-Cluedo.py has the main code for the game which starts execution once all players have joined the game.
-The communication between the players and the game server is maintained over messages.
+The players involved are bots, and they make random decisions based on the weightage provided for each decision. The game starts with 3 assumed players Alice, Bob and Charlie.
+The murder solution with suspect, weapon and room are separated first and removed from the deck. The remaining cards are shuffled and distributed.
 
-To execute the game, follow the below steps in order.
-
-* python Cluedo.py
-
-* python Player.py
+To execute the game, execute python Game.py
 
 
