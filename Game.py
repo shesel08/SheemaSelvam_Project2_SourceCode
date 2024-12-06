@@ -122,7 +122,7 @@ if __name__ == '__main__':
 
     player_names = ["Alice", "Bob", "Charlie", 'Peter', 'Jane', 'Rose']
 
-    n_players = int(input("Enter the number of players (2-6)\n(Least 3 players are recommended)\n"))
+    n_players = int(input("Enter the number of players (3-6)\n(Least 3 players are recommended)\n"))
     if type(n_players) == int and 6 >= n_players >= 3:
         possible_names = []
         for i in range(n_players):
