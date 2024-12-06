@@ -1,14 +1,15 @@
 import random
 import time
+import sys
 
 from Card import Card
 from Player import Player
 
 
 class Game:
-    def __init__(self, player_names):
-        self.players = [Player(name) for name in player_names]
-        self.playersWhoCanMakeAccusation = player_names
+    def __init__(self, names):
+        self.players = [Player(name) for name in names]
+        self.playersWhoCanMakeAccusation = names
         self.murder_solution = []
         self.deal_cards(len(self.players))
 
@@ -85,7 +86,7 @@ class Game:
     def player_turn(self):
         win = False
         for player in game.players:
-            print(f"{player.name} is rolling dice..")
+            print(f"\n{player.name} is rolling dice..")
             dice_count = game.dice_s()
             print(f"{player.name} has rolled dice {dice_count}")
             player.player_point += dice_count
@@ -119,9 +120,19 @@ if __name__ == '__main__':
     WEAPONS = ["Knife", "Candlestick", "Revolver", "Rope", "Lead pipe", "Wrench"]
     ROOMS = ["Hall", "Lounge", "Dining room", "Kitchen", "Ballroom", "Conservatory", "Billiard room", "Library", "Study"]
 
-    # Example game setup with players
-    player_names = ["Alice", "Bob", "Charlie"]
-    game = Game(player_names)
+    player_names = ["Alice", "Bob", "Charlie", 'Peter', 'Jane', 'Rose']
+
+    n_players = int(input("Enter the number of players (2-6)\n(Least 3 players are recommended)\n"))
+    if type(n_players) == int and 6 >= n_players >= 3:
+        possible_names = []
+        for i in range(n_players):
+            possible_names.append(player_names[i])
+        print(possible_names)
+    else:
+        print("Invalid character entered.")
+        sys.exit(1)
+
+    game = Game(possible_names)
 
     win = False
     while not win and len(game.playersWhoCanMakeAccusation) != 0:
