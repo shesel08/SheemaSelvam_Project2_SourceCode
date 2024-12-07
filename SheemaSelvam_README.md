@@ -36,9 +36,24 @@ There are nine rooms in the mansion where the murder could have taken place.
 
 The project can be cloned from GitHub using the url - https://github.com/shesel08/SheemaSelvam_Project2_SourceCode.git
 
-The players involved are bots, and they make random decisions based on the weightage provided for each decision. The game starts with 3 assumed players Alice, Bob and Charlie.
-The murder solution with suspect, weapon and room are separated first and removed from the deck. The remaining cards are shuffled and distributed.
+To execute the game, execute 
+Server/Bot execution - python Main.py
+Client - python Client.py by respective players
 
-To execute the game, execute python Game.py
+The user experience has been enhanced to allow just bots or the users can interact over TCP host ip address to play the game. The user can also control how many bots/players can play this game. The least required players are 3 and max is 6. 
+The user can choose the server type which has options as 
+1. With player bots offline 
+2. Offline Server 
+2. Online Server
+
+In the first option, the players involved are bots, and they make random decisions based on the weightage provided for each decision. 
+With the second option, the players can connect over same local ip address and play the game.
+With the third option, the players can play over internet using Google DNS to get the IP address.
+In case of both second and third option, each player should have Client.py in their local and edit the ip address in that file to connect to the game server. 
+The game server is up after selecting the option for server_type. Once the server is up, the players can connect to it by running the Client.py with updated ip address and continue playing the game.
+
+The murder solution with suspect, weapon and room are separated first and removed from the deck. The remaining cards are shuffled and distributed between the players. 
+The players can make suggestion or accusation. But if the accusation is incorrect, the same player can not make accusation again.
+The game ends when all players are removed from making accusation or one player wins.
 
 
