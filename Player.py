@@ -2,7 +2,7 @@ import random
 
 
 class Player:
-    def __init__(self, name):
+    def __init__(self, name, parameter=None):
         self.name = name
         self.hand = []
         self.player_point = 0
@@ -19,6 +19,7 @@ class Player:
                          "Professor. Plum"]
 
         self.weapon = ["Knife", "Candlestick", "Revolver", "Rope", "Lead pipe", "Wrench"]
+        self.parameter = parameter
 
     def add_card(self, card):
         self.hand.append(card)

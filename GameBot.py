@@ -1,39 +1,39 @@
 import random
-import time
-import sys
-
 from Card import Card
 from Player import Player
 
 
-class Game:
-    def __init__(self, names):
+class GameBot:
+    def __init__(self, names, suspects, weapons, rooms):
         self.players = [Player(name) for name in names]
         self.playersWhoCanMakeAccusation = names
         self.murder_solution = []
-        self.deal_cards(len(self.players))
+        self.SUSPECTS = suspects
+        self.WEAPONS = weapons
+        self.ROOMS = rooms
+        self.deal_cards()
 
-    def deal_cards(self, num_players):
-        y = int(15 / num_players)
-        count = y
-        excess_cards = 15 % num_players
-        temp_decs = []
-
+    def deal_cards(self):
+        num_players = len(self.players)
         # Select one suspect, weapon, and room for the solution
         self.murder_solution = [
-            random.choice(SUSPECTS),
-            random.choice(WEAPONS),
-            random.choice(ROOMS)
+            random.choice(self.SUSPECTS),
+            random.choice(self.WEAPONS),
+            random.choice(self.ROOMS)
         ]
         print("DEBUG: Murder solution (hidden):", self.murder_solution)
 
         # Remove solution cards from deck
-        deck = [Card(s) for s in SUSPECTS if s not in self.murder_solution]
-        deck += [Card(w) for w in WEAPONS if w not in self.murder_solution]
-        deck += [Card(r) for r in ROOMS if r not in self.murder_solution]
+        deck = [Card(s) for s in self.SUSPECTS if s not in self.murder_solution]
+        deck += [Card(w) for w in self.WEAPONS if w not in self.murder_solution]
+        deck += [Card(r) for r in self.ROOMS if r not in self.murder_solution]
+
+        excess_cards = len(deck) % num_players
+        count = len(deck) - excess_cards
 
         random.shuffle(deck)
         # Deal remaining cards to players
+        deck = deck[0:count]
         while deck:
             for player in self.players:
                 if deck:
@@ -44,7 +44,6 @@ class Game:
 
     def make_suggestion(self, p, suspect, weapon, room):
         print(f"{p.name} suggests: {suspect} with the {weapon} in the {room}")
-        pattern_1 = r'([A-Za-z0-9-_]*) has ([A-Za-z .]*).'
         temp_win = True
         accused = [suspect, weapon, room]
         for player in self.players:
@@ -73,11 +72,8 @@ class Game:
             self.playersWhoCanMakeAccusation.remove(player_name)
             return False
 
-    def dice_s(self):
-        return random.randint(1, 6)
-
     def show_player_deck_and_points(self):
-        for player in game.players:
+        for player in self.players:
             cards = []
             for card in player.hand:
                 cards.append(card.name)
@@ -85,9 +81,9 @@ class Game:
 
     def player_turn(self):
         win = False
-        for player in game.players:
+        for player in self.players:
             print(f"\n{player.name} is rolling dice..")
-            dice_count = game.dice_s()
+            dice_count = random.randint(1, 6)
             print(f"{player.name} has rolled dice {dice_count}")
             player.player_point += dice_count
             if player.player_point >= 8:
@@ -98,8 +94,8 @@ class Game:
                     player.player_point = 0
                     room = player.choose_room()
                     suspect, weapon = player.choose_suspect_and_weapon()
-                    winning = game.make_suggestion(player, suspect, weapon, room)
-                    if player.name in game.playersWhoCanMakeAccusation:
+                    winning = self.make_suggestion(player, suspect, weapon, room)
+                    if player.name in self.playersWhoCanMakeAccusation:
                         print("Do you want to reveal cards ?(y/n)")
                         if winning:
                             choice_r = random.choices(['y', 'n'], weights=(98, 2))
@@ -107,40 +103,9 @@ class Game:
                             choice_r = random.choices(['y', 'n'], weights=(2, 98))
                         print(f"You have chosen {choice_r} to reveal cards")
                         if 'y' in choice_r:
-                            return game.make_accusation(player.name, suspect, weapon, room)
+                            return self.make_accusation(player.name, suspect, weapon, room)
                         else:
                             pass
                 else:
                     pass
         return False
-
-if __name__ == '__main__':
-    # Card categories
-    SUSPECTS = ["Miss. Scarlett", "Colonel. Mustard", "Mrs. White", "Reverend. Green", "Mrs. Peacock", "Professor. Plum"]
-    WEAPONS = ["Knife", "Candlestick", "Revolver", "Rope", "Lead pipe", "Wrench"]
-    ROOMS = ["Hall", "Lounge", "Dining room", "Kitchen", "Ballroom", "Conservatory", "Billiard room", "Library", "Study"]
-
-    player_names = ["Alice", "Bob", "Charlie", 'Peter', 'Jane', 'Rose']
-
-    n_players = int(input("Enter the number of players (3-6)\n(Least 3 players are recommended)\n"))
-    if type(n_players) == int and 6 >= n_players >= 3:
-        possible_names = []
-        for i in range(n_players):
-            possible_names.append(player_names[i])
-        print(possible_names)
-    else:
-        print("Invalid character entered.")
-        sys.exit(1)
-
-    game = Game(possible_names)
-
-    win = False
-    while not win and len(game.playersWhoCanMakeAccusation) != 0:
-        game.show_player_deck_and_points()
-        time.sleep(1)
-        win = game.player_turn()
-        print("\n\n")
-
-    if len(game.playersWhoCanMakeAccusation) == 0:
-        print("All players have been removed from making accusations")
-    print("Thanks for playing.")
